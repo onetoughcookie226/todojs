@@ -79,8 +79,9 @@
   <div class="container">
     <h1>TodoList</h1>
 
-    <form>
+    <form onsubmit="submitTodo(); return false">
       <input type="text" id="new-todo" placeholder="What needs to be done?">
+      <!-- <form onsubmit="submitTodo(); return false"></form> -->
     </form>
 
     <ul id="todolist">
@@ -100,18 +101,6 @@
     </div>
   </div>
 
-  <!-- <script>
-    // select the element containing the count
-
-
-  var totalCount = document.getElementById('total-count');
-
-    // count the number of todo's by their class name
-var totalTodos = document.getElementsByClassName("todo").length;
-
-// update the HTML inside the counter element
-totalCount.innerHTML = totalTodos;
-  </script> -->
 <script src="app.js"></script>
 </body>
 </html>
